@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+from random import randint
 
 
 def users(request):
-    return HttpResponse("Hello World!")
+    context = {
+        'number': randint(1, 100)
+    }
+    return render(request, 'table.html', context)
