@@ -1,10 +1,26 @@
 from django.shortcuts import render
 
-from random import randint
+from django.http import HttpResponse
+
+from django.contrib.auth.models import User
 
 
-def users(request):
-    context = {
-        'number': randint(1, 100)
-    }
-    return render(request, 'table.html', context)
+def analytics(request):
+    return render(request, 'analytics.html')
+
+
+def journal(request):
+    return render(request, 'journal.html')
+
+
+def category(request):
+    return render(request, 'category.html')
+
+
+def create(request):
+    user = User.objects.create_user('noadmin')
+    user.save()
+    return HttpResponse("""
+    <p>Пользователь добавлен</p>
+    <a href="/admin">Перейти в админку</a>
+    """)
