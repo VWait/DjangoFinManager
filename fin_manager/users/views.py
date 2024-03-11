@@ -2,19 +2,21 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-from django.contrib.auth.models import User
+from .models import User
 
 
 def analytics(request):
-    data = request.session.get("key", 0)
-    print(data)
+    print(request.POST.get("name"))
     return render(request, 'analytics.html')
 
 
 def journal(request):
     data = request.session.get("key", 0) + 1
     request.session['key'] = data
-    return render(request, 'journal.html')
+    context = {
+        'messages': ['asdf', 'a']
+    }
+    return render(request, 'journal.html', context)
 
 
 def category(request):
