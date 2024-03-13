@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+<h2>User form</h2>
+<form method="post" action="postuser/">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-label">
+        {{ field }}
+    </div>
+    {% endfor %}
+    <input type="submit" value="Send">
+</form>
+</body>
+</html>

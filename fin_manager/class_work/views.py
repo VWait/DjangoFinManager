@@ -14,7 +14,6 @@ def messages(request):
 
 def message_id(request, id=0):
     messages = Message.objects.all()
-    title = ''
     if not 0 <= id < len(messages):
         title = messages[0].title
     else:

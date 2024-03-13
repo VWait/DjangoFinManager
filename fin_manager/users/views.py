@@ -1,30 +1,17 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
-
-from .models import User
+from .forms import UserForm
 
 
-def analytics(request):
-    print(request.POST.get("name"))
-    return render(request, 'analytics.html')
+def login(request):
+    user_form = UserForm
+    return render(request, 'login.html', {'form': user_form})
 
 
-def journal(request):
-    data = request.session.get("key", 0) + 1
-    request.session['key'] = data
+def post_user(request):
+    name = request.POST.get("name", [])
+    print(name)
     context = {
-        'messages': ['asdf', 'a']
+        "name": name
     }
-    return render(request, 'journal.html', context)
-
-
-def category(request):
-    request.session['key'] = 0
-    return render(request, 'category.html')
-
-
-def number(request, n=0, m=0):
-    return HttpResponse(f"""
-    <h1>{n} + {m} = {n + m}</h1>
-    """)
+    return render(request, 'post_user.html', context=context)
