@@ -24,7 +24,7 @@ class Note(models.Model):
     wallet = models.ForeignKey(Wallet, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     value = models.IntegerField(null=False)
-    date_note = models.DateField()
+    date_note = models.DateField(null=True)
 
     def __str__(self):
         return f'{self.category}: {self.value} руб'
