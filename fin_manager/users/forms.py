@@ -1,7 +1,17 @@
-from django import forms
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+
+from .models import CustomUser
 
 
-class UserForm(forms.Form):
-    name = forms.CharField(label='Имя', required=True)
-    comment = forms.CharField(label='Комментарий', required=False)
-    age = forms.IntegerField(label='Возраст', initial=18)
+class CustomUserCreationForm(UserCreationForm):
+
+    class Meta:
+        model = CustomUser
+        fields = ("email",)
+
+
+class CustomUserChangeForm(UserChangeForm):
+
+    class Meta:
+        model = CustomUser
+        fields = ("email",)

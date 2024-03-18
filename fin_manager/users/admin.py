@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import User
+from .models import CustomUser
 
 
 class AuthorAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(User, AuthorAdmin)
+admin.site.register(CustomUser, AuthorAdmin)
