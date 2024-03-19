@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Форма</title>
-    {% load bootstrap5 %}
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
-</head>
-<body>
-<form method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="login" />
-</form>
-
-</body>
-</html>
+{% extends 'index.html' %}
+{% block main %}
+<div class="d-flex justify-content-center">
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="mb-3">
+            <label class="form-label">{{ field.label }}</label>
+            {{ field }}
+        </div>
+        {% endfor %}
+        <input class="btn btn-primary" type="submit" value="Зарегистрироваться"/>
+    </form>
+</div>
+{% endblock %}

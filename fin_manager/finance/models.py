@@ -1,10 +1,10 @@
 from django.db import models
 
-from users.models import CustomUser
+from django.contrib.auth.models import User
 
 
 class Wallet(models.Model):
-    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=30)
     value = models.IntegerField(default=0)
 
@@ -13,7 +13,7 @@ class Wallet(models.Model):
 
 
 class Category(models.Model):
-    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=30)
 
     def __str__(self):
