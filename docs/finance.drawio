@@ -1,0 +1,105 @@
+<mxfile host="Electron" modified="2024-03-19T11:04:24.388Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="XajIR7RYBqZ6E-f3C0Qx" version="24.0.4" type="device">
+  <diagram name="Страница — 1" id="rjoIiBt-hg38BlFHQYsb">
+    <mxGraphModel dx="1434" dy="844" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b03-ie_SCspEyGQdQe4q-4" value="Буфер (один)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="273" y="142" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-5" value="Деньги на карте" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-4">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-29" value="* расчитывается из расходов" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-4">
+          <mxGeometry y="52" width="230" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-31" value="&lt;span style=&quot;background-color: initial;&quot;&gt;* избыток уходит в конверты и копилку&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-4">
+          <mxGeometry y="80" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="b03-ie_SCspEyGQdQe4q-8" target="b03-ie_SCspEyGQdQe4q-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-8" value="Расходы (много)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="150" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-9" value="Незапланированные расходы или периодические траты" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-8">
+          <mxGeometry y="26" width="190" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-10" value="* зависит от периода" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-8">
+          <mxGeometry y="70" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-47" value="* можно добавить план" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-8">
+          <mxGeometry y="100" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=open;startFill=0;endArrow=none;endFill=0;" edge="1" parent="1" source="b03-ie_SCspEyGQdQe4q-12" target="b03-ie_SCspEyGQdQe4q-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-46" value="Излишек" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="b03-ie_SCspEyGQdQe4q-44">
+          <mxGeometry x="0.1333" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-12" value="Копилка (много)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="366" width="230" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-14" value="Деньги хранятся на вкладе или инвест. счёте" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-12">
+          <mxGeometry y="26" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-55" value="* при создании имеет либо цель, либо периодическую выплату" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-12">
+          <mxGeometry y="70" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-20" value="Конверты (много)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="121" y="366" width="190" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-21" value="Запланированные траты с собственным периодом" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-20">
+          <mxGeometry y="26" width="190" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-54" value="* при создании имеет план и дату завершения" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-20">
+          <mxGeometry y="70" width="190" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="b03-ie_SCspEyGQdQe4q-24" target="b03-ie_SCspEyGQdQe4q-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-24" value="Доходы (много)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="140" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-25" value="Любой доход" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-24">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-26" value="* зависит от периода" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-24">
+          <mxGeometry y="52" width="140" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-49" value="* можно добавить план" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="b03-ie_SCspEyGQdQe4q-24">
+          <mxGeometry y="80" width="140" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-34" value="Временной период (месяц, квартал, год)" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="335" y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;" edge="1" parent="1" source="b03-ie_SCspEyGQdQe4q-25" target="b03-ie_SCspEyGQdQe4q-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-41" value="Идут в буфер" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="b03-ie_SCspEyGQdQe4q-38">
+          <mxGeometry x="0.0296" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-39" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;" edge="1" parent="1" source="b03-ie_SCspEyGQdQe4q-5" target="b03-ie_SCspEyGQdQe4q-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-42" value="Траты из буфера" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="b03-ie_SCspEyGQdQe4q-39">
+          <mxGeometry x="-0.1051" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=open;startFill=0;endArrow=none;endFill=0;" edge="1" parent="1" source="b03-ie_SCspEyGQdQe4q-20" target="b03-ie_SCspEyGQdQe4q-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b03-ie_SCspEyGQdQe4q-45" value="Излишек" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="b03-ie_SCspEyGQdQe4q-43">
+          <mxGeometry x="0.0683" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
