@@ -20,9 +20,10 @@ from django.urls import include, path, re_path
 from . import views
 
 urlpatterns = [
+    path('', views.index, name='index'),
+    path('home/', views.home, name='home'),
     path('users/', include('users.urls')),
     path('finance/', include('finance.urls')),
     path("admin/", admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    re_path('.*', views.index, name='index')
 ]
