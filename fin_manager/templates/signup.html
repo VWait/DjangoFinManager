@@ -31,6 +31,7 @@
             <div class="form-text">{{ field.help_text }}</div>
         </div>
         {% endfor %}
+        <h1>{{ form.non_field_errors.0 }}</h1>
         <input class="btn btn-primary" type="submit" value="Зарегистрироваться"/>
     </form>
 </div>

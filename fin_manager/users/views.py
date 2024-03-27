@@ -18,7 +18,7 @@ def sign_up(request):
     context = {
         'form': form
     }
-    return render(request, 'signup.html', context=context)
+    return render(request, 'users_signup.html', context=context)
 
 
 def log_out(request):
@@ -30,10 +30,12 @@ def sign_in(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
-            pass
+            user = form.get_user()
+            login(request, user)
+            return redirect('/')
     else:
         form = LoginForm()
     context = {
         'form': form
     }
-    return render(request, 'signup.html', context=context)
+    return render(request, 'users_login.html', context=context)
