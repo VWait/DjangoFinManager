@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}FinManager{% endblock %}</title>
@@ -7,18 +7,21 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
 </head>
-<body>
-<header>
-    {% block header %}
-    {% endblock %}
-</header>
-<main>
-    {% block main %}
-    {% endblock %}
-</main>
-<footer>
-    {% block footer %}
-    {% endblock %}
-</footer>
+<body class="h-100">
+<div class="d-flex h-100 flex-column">
+    <header class="mb-auto">
+        {% block header %}
+        {% endblock %}
+    </header>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer class="mt-auto">
+        {% block footer %}
+        {% endblock %}
+    </footer>
+</div>
 </body>
 </html>
+

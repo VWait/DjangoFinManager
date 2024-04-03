@@ -8,4 +8,4 @@ def index(request):
 
 
 def home(request):
-    return render(request, 'no_auth.html')
+    return render(request, 'hello.html')
