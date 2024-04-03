@@ -17,3 +17,4 @@
   * 0-15 UML (USE-Case, components, DB, class)
 * Системы контроля версий (GitHub, GitLab и др)
   * 0-20 коммиты, ветки, пул-реквесты
+222
