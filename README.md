@@ -9,3 +9,4 @@
   * html
 * https://getbootstrap.com/docs/5.0/
 * https://www.djangoproject.com/start/
+* https://testdriven.io/blog/django-permissions/#model-level-permissions
