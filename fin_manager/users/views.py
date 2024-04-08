@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login, logout
 
-from .forms import LoginForm
+from .forms import SignInForm
 
 
 def sign_up(request):
@@ -28,13 +28,13 @@ def log_out(request):
 
 def sign_in(request):
     if request.method == 'POST':
-        form = LoginForm(request.POST)
+        form = SignInForm(request.POST)
         if form.is_valid():
             user = form.get_user()
             login(request, user)
             return redirect('/')
     else:
-        form = LoginForm()
+        form = SignInForm()
     context = {
         'form': form
     }
