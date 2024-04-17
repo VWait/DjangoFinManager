@@ -1,9 +1,7 @@
-from django.forms import ModelForm
+from django import forms
 
-from .models import Wallet
+from .models import Note, CategoryType
 
 
-class WalletForm(ModelForm):
-    class Meta:
-        model = Wallet
-        fields = ('name', 'value', )
+class TaskForm(forms.Form):
+    pass

@@ -1,25 +1,29 @@
 {% extends 'index.html '%}
-{% block header %}
-<nav class="navbar navbar-expand navbar-light bg-light">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-1">
-                    <a class="btn btn-outline-primary" href="/users/signup" role="button">Регистрация</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="btn btn-outline-secondary" href="/users/signin" role="button">Вход</a>
-                </li>
-            </ul>
+{% block content %}
+<div class="d-flex h-100 flex-column justify-content-between">
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-1">
+                            <a class="btn btn-outline-primary" href="/users/signup" role="button">Регистрация</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="btn btn-outline-secondary" href="/users/signin" role="button">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="d-flex justify-content-center">
+            <h1>Добро пожаловать! Это финансовый менеджер!</h1>
         </div>
-    </div>
-</nav>
-{% endblock %}
-{% block main %}
-<div class="d-flex justify-content-center">
-    <h1>Добро пожаловать! Это финансовый менеджер!</h1>
+    </main>
+    <footer>
+        <p class="text-center">@ все права не защищены</p>
+    </footer>
 </div>
-{% endblock %}
-{% block footer %}
-<p class="text-center">@ все права не защищены</p>
 {% endblock %}

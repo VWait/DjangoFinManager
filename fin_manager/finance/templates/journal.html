@@ -1,7 +1,38 @@
 {% extends 'base.html' %}
 
-{% block content %}
-<form method="post">
-    {% csrf_token %}
-</form>
+{% block main %}
+<div class="container-fluid m-3">
+    <div class="row">
+        <div class="col-5">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Категория</th>
+                    <th>Значение</th>
+                    <th>Дата</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Зарплата</td>
+                    <td>20000 руб</td>
+                    <td>10.04.2024</td>
+                </tr>
+                <tr>
+
+                </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-outline-secondary ms-auto">Добавить доход</button>
+        </div>
+        <div class="col-2">
+            <div class="alert alert-info" role="alert">
+                10000 руб
+            </div>
+        </div>
+        <div class="col-5">
+            <h1>3</h1>
+        </div>
+    </div>
+</div>
 {% endblock %}
