@@ -1,7 +1,9 @@
 from django import forms
 
-from .models import Note, CategoryType
+from .models import Category
 
 
-class TaskForm(forms.Form):
-    pass
+class CategoryForm(forms.ModelForm):
+    class Meta:
+        model = Category
+        fields = ('name', 'expected_value', 'period')

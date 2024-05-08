@@ -3,7 +3,8 @@
 {% block main %}
 <div class="container-fluid m-3">
     <div class="row">
-        <div class="col-5">
+        <div class="col-5 text-center">
+            <h2>Доходы</h2>
             <table class="table">
                 <thead>
                 <tr>
@@ -13,25 +14,69 @@
                 </tr>
                 </thead>
                 <tbody>
+                {% for income in incomes %}
                 <tr>
-                    <td>Зарплата</td>
-                    <td>20000 руб</td>
-                    <td>10.04.2024</td>
+                    <td>{{ income.name }}</td>
+                    <td>{{ income.value}} руб</td>
+                    <td>{{ income.date }}</td>
                 </tr>
-                <tr>
-
-                </tr>
+                {% endfor %}
                 </tbody>
             </table>
-            <button class="btn btn-outline-secondary ms-auto">Добавить доход</button>
+            <button class="btn btn-outline-secondary ms-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#categoryForm">
+                Добавить доход
+            </button>
         </div>
         <div class="col-2">
-            <div class="alert alert-info" role="alert">
-                10000 руб
+            <div class="alert alert-info text-center" role="alert">
+                {{ buffer }}
             </div>
         </div>
-        <div class="col-5">
-            <h1>3</h1>
+        <div class="col-5 text-center">
+            <h2>Расходы</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Категория</th>
+                    <th>Значение</th>
+                    <th>Дата</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for expense in expenses %}
+                <tr>
+                    <td>{{ expense.name }}</td>
+                    <td>{{ expense.value}} руб</td>
+                    <td>{{ expense.date }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="categoryForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Добавить доход</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="modal-body">
+                    <table>
+                        {{ form }}
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary">Добавить</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
